@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Agregar Educación</h1>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreEdu" class="mb-2">Nombre de la Institución</label>
+                    <input type="text" class="form-control mb-2" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionEdu" class="mb-2">Descripción</label>
+                    <input type="text" class="form-control mb-2" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="descripcionEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaEdu" class="mb-2">Fecha </label>
+                    <input type="text" class="form-control mb-2" id="fechaEdu" name="fechaEdu" [(ngModel)]="fechaEdu" required>
+                </div>
+                <button class="btn btn-primary mb-2">Agregar educación</button>
+            </form>
+            <a href="https://pmrportfoliofront.web.app/" class="btn btn-secondary">Cancelar</a>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container" *ngIf="pro">
+    <div class="row">
+        <div>
+            <h1>Editar Proyectos</h1>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombrePro" class="mb-2">Nombre del proyecto</label>
+                    <input type="text" class="form-control mb-2" id="nombrePro" name="nombrePro" [(ngModel)]="pro.nombrePro" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPro" class="mb-2">Descripción del proyecto </label>
+                    <input type="text" class="form-control mb-2" id="descripcionPro" name="descripcionPro" [(ngModel)]="pro.descripcionPro" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagenPro" class="mb-2">Imagen del proyecto</label>
+                    <input type="text" class="form-control mb-2" id="imagenPro" name="imagenPro" [(ngModel)]="pro.imagenPro" required>
+                </div>
+                <button class="btn btn-primary mb-2">Actualizar proyecto</button>
+            </form>
+            <a href="https://pmrportfoliofront.web.app/" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </div>
+</div>

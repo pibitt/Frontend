@@ -1,0 +1,26 @@
+
+footer{
+    background-color: #0F4C5C;
+    color: #fefefe;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+p{
+    margin: 0px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #82DBD8;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.bi-envelope{
+    color: #82DBD8;
+}
+
